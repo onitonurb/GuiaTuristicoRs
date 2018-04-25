@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "383622478012",
+    "firebase_url": "https://guia-turistico-rs.firebaseio.com",
+    "project_id": "guia-turistico-rs",
+    "storage_bucket": "guia-turistico-rs.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:383622478012:android:b393629406dbf44c",
+        "android_client_info": {
+          "package_name": "com.projeto.guiaturistico.guiaturisticors"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "383622478012-7mjf4vq6phmkeoeakqsm36ci7eibe05q.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.projeto.guiaturistico.guiaturisticors",
+            "certificate_hash": "f8975e3d024f9054cb58b705a41d6a7c325e3628"
+          }
+        },
+        {
+          "client_id": "383622478012-gbj8ceujk86hjrh2v6iku907k2jdfo5a.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBVzkZVK92_ywhNDZOP0Q98zePga66DbUQ"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "383622478012-gbj8ceujk86hjrh2v6iku907k2jdfo5a.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

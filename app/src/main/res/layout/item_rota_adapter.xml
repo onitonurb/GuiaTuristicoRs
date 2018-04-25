@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="10dp"
+            android:text="Origem:"
+            android:paddingLeft="4dp"
+            android:paddingRight="4dp"/>
+
+        <TextView
+            android:id="@+id/item_rota_origem"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Rota Origem"
+            android:textSize="12dp"
+            android:paddingTop="4dp"
+            android:paddingLeft="4dp"
+            android:paddingRight="4dp"
+            android:paddingBottom="4dp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="10dp"
+            android:text="Destino:"
+            android:paddingLeft="4dp"
+            android:paddingRight="4dp"/>
+
+        <TextView
+            android:id="@+id/item_rota_destino"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Rota Destino"
+            android:textSize="12dp"
+            android:paddingTop="4dp"
+            android:paddingLeft="4dp"
+            android:paddingRight="4dp"
+            android:paddingBottom="4dp"/>
+
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,49 @@
+<resources>
+    <string name="app_name">GuiaTuristicoRs</string>
+    <string name="hint_login">Digite seu e-mail...</string>
+    <string name="hint_senha">Digite sua senha...</string>
+    <string name="texto_botao_logar">Logar</string>
+    <string name="hint_nome">Digite seu nome...</string>
+    <string name="hint_email_confirmacao">Confirme seu e-mail...</string>
+    <string name="hint_senha_confirmacao">Cornfirme sua senha...</string>
+    <string name="botao_cadastrar">Cadastrar</string>
+    <string name="texto_link_cadastro">Não tem uma conta?   Clique aqui!</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_menu">Guia Turistíco RS</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Configurações</string>
+    <string name="action_login">Login</string>
+    <string name="title_activity_maps">Map</string>
+    <string name="tx_lista_cidade_primaria">Regiões turísticas</string>
+    <string name="tx_lista_cidades_todas">Todas as cidades</string>
+    <string name="google_android_map_api_key">AIzaSyD0z0OiiEqQZ3SvYYDV1j_VDfPrqIzjTOk</string>
+    <string name="google_maps_directions_api_key">AIzaSyA-xhbiU4qcTVSFrSOe_OuLUaVD1CzcBi8</string>
+    <string name="tx_bt_abrir_mapa">Abrir mapa da cidade</string>
+    <string name="nome_cidade_padrao">Nome da cidade</string>
+    <string name="tx_bt_pesquisa_restaurante">Pesquisar restaurantes na cidade</string>
+    <string name="tx_restaurante_pesquisa_padrao">Restaurantes</string>
+    <string name="tx_hotel_pesquisa_padrao">Hotéis</string>
+    <string name="tx_desconto_pesquisa_padrao">Descontos</string>
+    <string name="tx_evento_pesquisa_padrao">Eventos</string>
+    <string name="action_ordenar">Ordenar</string>
+    <string name="action_pesquisa">Pesquisa</string>
+    <string name="titulo_restaurantes_padrao">Melhores restaurantes</string>
+    <string name="titulo_guia">Informe origem e destino</string>
+    <string name="txt_guia_origem">Origem:</string>
+    <string name="txt_guia_destino">Destino:</string>
+    <string name="txt_guia_botao">Abrir rota no mapa</string>
+    <string name="botao_rota">Traçar rota</string>
+    <string name="txt_escolha_origem">Escolha a cidade de origem:</string>
+    <string name="txt_escolha_destino">Escolha a cidade de destino:</string>
+    <string name="bt_confirma_escolha">Confirmar escolha</string>
+    <string name="escolha_origem">Cidade de origem</string>
+    <string name="escolha_destino">Cidade de destino</string>
+    <string name="botao_adicionar">Adicionar rota</string>
+    <string name="txt_rotas">Rotas selecionadas</string>
+</resources>

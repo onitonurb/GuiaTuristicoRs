@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_cidades"
+            android:icon="@drawable/ic_location_city_black_24dp"
+            android:title="Cidades" />
+        <item
+            android:id="@+id/nav_restaurantes"
+            android:icon="@drawable/ic_restaurant_black_24dp"
+            android:title="Restaurantes" />
+        <item
+            android:id="@+id/nav_hoteis"
+            android:icon="@drawable/ic_hotel_black_24dp"
+            android:title="Hotéis" />
+        <item
+            android:id="@+id/nav_eventos"
+            android:icon="@drawable/ic_event_black_24dp"
+            android:title="Eventos" />
+        <item
+            android:id="@+id/nav_descontos"
+            android:icon="@drawable/ic_attach_money_black_24dp"
+            android:title="Descontos" />
+        <item
+            android:id="@+id/nav_guia"
+            android:icon="@drawable/ic_room_black_24dp"
+            android:title="Guia" />
+    </group>
+
+</menu>
