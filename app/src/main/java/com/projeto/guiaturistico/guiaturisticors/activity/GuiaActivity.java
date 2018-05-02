@@ -7,6 +7,8 @@ import android.graphics.Color;
 import android.support.v4.app.ActivityCompat;
 import android.support.v4.app.FragmentActivity;
 import android.os.Bundle;
+import android.support.v7.app.ActionBar;
+import android.support.v7.widget.Toolbar;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
@@ -44,13 +46,12 @@ public class GuiaActivity extends FragmentActivity implements OnMapReadyCallback
     private List<Marker> destinationMarkers = new ArrayList<>();
     private List<Polyline> polylinePaths = new ArrayList<>();
     private ProgressDialog progressDialog;
-    private Boolean pronto = true;
-    private Boolean continua = true;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_guia);
+
         // Obtain the SupportMapFragment and get notified when the map is ready to be used.
         SupportMapFragment mapFragment = (SupportMapFragment) getSupportFragmentManager()
                 .findFragmentById(R.id.map);
@@ -63,24 +64,13 @@ public class GuiaActivity extends FragmentActivity implements OnMapReadyCallback
         Bundle extra = getIntent().getExtras();
         String origem = "";
         String destino = "";
-        ArrayList<String> origens = new ArrayList<>();
-        ArrayList<String> destinos = new ArrayList<>();
 
         if(extra != null){
-            origens = extra.getStringArrayList("origens");
-            destinos = extra.getStringArrayList("destinos");
-        }
-
-        for(int i=0; i<origens.size(); i++) {
-            while (continua) {
-                origem = origens.get(i);
-                etOrigin.setText(origem);
-                destino = destinos.get(i);
-                etDestination.setText(destino);
-                if (pronto) {
-                    sendRequest();
-                }
-            }
+            origem = extra.getString("origem");
+            destino = extra.getString("destino");
+            etOrigin.setText(origem);
+            etDestination.setText(destino);
+            sendRequest();
         }
 
         btnFindPath.setOnClickListener(new View.OnClickListener() {
@@ -92,8 +82,7 @@ public class GuiaActivity extends FragmentActivity implements OnMapReadyCallback
     }
 
     private void sendRequest() {
-        continua = false;
-        pronto = false;
+
         String origin = etOrigin.getText().toString();
         String destination = etDestination.getText().toString();
         if (origin.isEmpty()) {
@@ -110,8 +99,7 @@ public class GuiaActivity extends FragmentActivity implements OnMapReadyCallback
         } catch (UnsupportedEncodingException e) {
             e.printStackTrace();
         }
-        pronto = true;
-        continua = true;
+
     }
 
     @Override
@@ -119,7 +107,7 @@ public class GuiaActivity extends FragmentActivity implements OnMapReadyCallback
         mMap = googleMap;
         mMap.setMapType(GoogleMap.MAP_TYPE_HYBRID);
         LatLng poa = new LatLng(-30.0277, -51.2287);
-        mMap.moveCamera(CameraUpdateFactory.newLatLngZoom(poa, 18));
+        mMap.moveCamera(CameraUpdateFactory.newLatLngZoom(poa, 50));
         //originMarkers.add(mMap.addMarker(new MarkerOptions()
         //        .title("Porto Alegre")
         //        .position(poa)));
@@ -147,7 +135,7 @@ public class GuiaActivity extends FragmentActivity implements OnMapReadyCallback
         progressDialog = ProgressDialog.show(this, "Por favor aguarde.",
                 "Procurando rota..!", true);
 
-       /* if (originMarkers != null) {
+        if (originMarkers != null) {
             for (Marker marker : originMarkers) {
                 marker.remove();
             }
@@ -163,7 +151,7 @@ public class GuiaActivity extends FragmentActivity implements OnMapReadyCallback
             for (Polyline polyline:polylinePaths ) {
                 polyline.remove();
             }
-        }*/
+        }
     }
 
     @Override
@@ -182,6 +170,7 @@ public class GuiaActivity extends FragmentActivity implements OnMapReadyCallback
                     .icon(BitmapDescriptorFactory.fromResource(R.drawable.start_blue))
                     .title(route.startAddress)
                     .position(route.startLocation)));
+
             destinationMarkers.add(mMap.addMarker(new MarkerOptions()
                     .icon(BitmapDescriptorFactory.fromResource(R.drawable.end_green))
                     .title(route.endAddress)

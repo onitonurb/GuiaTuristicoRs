@@ -31,12 +31,6 @@ public class ListaCidadeActivity extends AppCompatActivity {
     private Toolbar cidadeListaToolbar;
 
     @Override
-    public boolean onCreateOptionsMenu(Menu menu) {
-        getMenuInflater().inflate(R.menu.menu_lista_cidade, menu);
-        return true;
-    }
-
-    @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_lista_cidade);

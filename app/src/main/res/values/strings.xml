@@ -23,6 +23,7 @@
     <string name="tx_lista_cidade_primaria">Regiões turísticas</string>
     <string name="tx_lista_cidades_todas">Todas as cidades</string>
     <string name="google_android_map_api_key">AIzaSyD0z0OiiEqQZ3SvYYDV1j_VDfPrqIzjTOk</string>
+    <string name="google_js_map_api_key">AIzaSyDdxZj_qaB2_fSVglQio_E2Jpu_Uj7eEzY</string>
     <string name="google_maps_directions_api_key">AIzaSyA-xhbiU4qcTVSFrSOe_OuLUaVD1CzcBi8</string>
     <string name="tx_bt_abrir_mapa">Abrir mapa da cidade</string>
     <string name="nome_cidade_padrao">Nome da cidade</string>
@@ -46,4 +47,11 @@
     <string name="escolha_destino">Cidade de destino</string>
     <string name="botao_adicionar">Adicionar rota</string>
     <string name="txt_rotas">Rotas selecionadas</string>
+    <string name="btn_procurar_foto">Selecionar foto</string>
+    <string name="btn_upload">Fazer upload</string>
+    <string name="bt_txt_escolhe_foto">Escolha uma foto de perfil</string>
+    <string name="action_logoff">Sair</string>
+    <string name="btn_novo_usuario">Não tem conta? Cadastre-se...</string>
+    <string name="titulo_header">Guia Turistico RS</string>
+    <string name="sub_titulo_header">Menu</string>
 </resources>

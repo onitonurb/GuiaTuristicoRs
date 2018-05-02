@@ -88,10 +88,4 @@ public class CidadesRegiaoActivity extends AppCompatActivity {
         });
 
     }
-
-    @Override
-    public boolean onCreateOptionsMenu(Menu menu) {
-        getMenuInflater().inflate(R.menu.menu_lista_cidade, menu);
-        return true;
-    }
 }

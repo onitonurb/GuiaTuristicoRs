@@ -9,6 +9,7 @@ import android.support.v7.widget.Toolbar;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.TextView;
 import android.widget.Toast;
 
 import com.google.android.gms.tasks.OnCompleteListener;
@@ -38,16 +39,14 @@ public class LoginActivity extends AppCompatActivity {
     private ValueEventListener valueEventListenerUsuario;
     private String identificadorUsuarioLogado;
     private Usuario usuario;
+    private Button cadastro;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_login);
 
-        toolbar = findViewById(R.id.toolbar_login);
-        setSupportActionBar(toolbar);
-        ActionBar actionBar = getSupportActionBar();
-        actionBar.setDisplayHomeAsUpEnabled(true);
+        autenticacao = FirebaseAuth.getInstance();
 
         //Verifica se o usuário já está logado
         verificarUsuarioLogado();
@@ -55,6 +54,14 @@ public class LoginActivity extends AppCompatActivity {
         login = findViewById(R.id.campo_login);
         senha = findViewById(R.id.campo_senha);
         botaoLogar = findViewById(R.id.botao_logar);
+        cadastro = findViewById(R.id.bt_cadastro);
+
+        cadastro.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                abrirCadastroUsuario();
+            }
+        });
 
         botaoLogar.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -77,7 +84,7 @@ public class LoginActivity extends AppCompatActivity {
 
     }
 
-    public void abrirCadastroUsuario(View view){
+    private void abrirCadastroUsuario(){
 
         Intent intent = new Intent(LoginActivity.this, CadastroActivity.class);
         startActivity( intent );
@@ -110,7 +117,7 @@ public class LoginActivity extends AppCompatActivity {
                             Usuario usuarioRecuperado = dataSnapshot.getValue( Usuario.class );
 
                             Preferencias preferencias = new Preferencias(LoginActivity.this);
-                            preferencias.salvarDados( identificadorUsuarioLogado, usuarioRecuperado.getNome() );
+                            preferencias.salvarDados( identificadorUsuarioLogado, usuarioRecuperado.getNome());
 
                         }
 

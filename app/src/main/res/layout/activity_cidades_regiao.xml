@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/txt_background"
     tools:context=".activity.CidadesRegiaoActivity"
     tools:layout_editor_absoluteY="81dp">
 
@@ -16,7 +17,7 @@
         android:theme="?attr/actionBarTheme"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"/>
+        app:layout_constraintTop_toTopOf="parent" />
 
     <ListView
         android:id="@+id/lista_cidades_regiao"

@@ -8,11 +8,13 @@
         android:id="@+id/tv_nome_tipo"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:paddingBottom="4dp"
-        android:paddingLeft="4dp"
-        android:paddingRight="4dp"
-        android:paddingTop="4dp"
+        android:background="#edd7d7d7"
+        android:paddingBottom="8dp"
+        android:paddingLeft="8dp"
+        android:paddingRight="8dp"
+        android:paddingTop="8dp"
         android:text="Cidade"
-        android:textSize="12dp" />
+        android:textColor="@color/common_google_signin_btn_text_dark_focused"
+        android:textSize="18dp" />
 
 </LinearLayout>

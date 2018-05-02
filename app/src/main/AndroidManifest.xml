@@ -3,17 +3,19 @@
     package="com.projeto.guiaturistico.guiaturisticors">
 
     <uses-permission android:name="android.permission.INTERNET" />
-
     <uses-permission-sdk-23 android:name="android.permission.INTERNET" />
 
-    <!--
-         The ACCESS_COARSE/FINE_LOCATION permissions are not required to use
-         Google Maps Android API v2, but you must specify either coarse or fine
-         location permissions for the 'MyLocation' functionality. 
-    -->
     <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission-sdk-23 android:name="android.permission.ACCESS_FINE_LOCATION" />
+
     <uses-permission android:name="com.google.android.providers.gsf.permission.READ_GSERVICES" />
+    <uses-permission-sdk-23 android:name="com.google.android.providers.gsf.permission.READ_GSERVICES" />
+
     <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission-sdk-23 android:name="android.permission.ACCESS_COARSE_LOCATION" />
+
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission-sdk-23 android:name="android.permission.READ_EXTERNAL_STORAGE" />
 
     <application
         android:allowBackup="true"
@@ -29,11 +31,6 @@
         <activity
             android:name=".activity.MenuActivity"
             android:label="@string/title_activity_menu">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
         </activity>
         <activity
             android:name=".activity.CadastroActivity"
@@ -44,28 +41,15 @@
         </activity>
         <activity
             android:name=".activity.LoginActivity"
-            android:label="@string/title_activity_menu"
-            android:parentActivityName=".activity.MenuActivity">
-            <meta-data
-                android:name="android.support.PARENT_ACTIVITY"
-                android:value=".activity.MenuActivity" />
+            android:label="@string/title_activity_menu">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
         </activity>
         <activity
             android:name=".activity.ListaCidadeActivity"
-            android:parentActivityName=".activity.MenuActivity">
-            <meta-data
-                android:name="android.support.PARENT_ACTIVITY"
-                android:value=".activity.MenuActivity" />
-        </activity>
-        <activity
-            android:name=".activity.HotelActivity"
-            android:parentActivityName=".activity.MenuActivity">
-            <meta-data
-                android:name="android.support.PARENT_ACTIVITY"
-                android:value=".activity.MenuActivity" />
-        </activity>
-        <activity
-            android:name=".activity.EventoActivity"
             android:parentActivityName=".activity.MenuActivity">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
@@ -102,20 +86,6 @@
                 android:value=".activity.ListaCidadeActivity" />
         </activity>
         <activity
-            android:name=".activity.RestauranteActivity"
-            android:parentActivityName=".activity.MenuActivity">
-            <meta-data
-                android:name="android.support.PARENT_ACTIVITY"
-                android:value=".activity.MenuActivity" />
-        </activity>
-        <activity
-            android:name=".activity.DescontoActivity"
-            android:parentActivityName=".activity.MenuActivity">
-            <meta-data
-                android:name="android.support.PARENT_ACTIVITY"
-                android:value=".activity.MenuActivity" />
-        </activity>
-        <activity
             android:name=".activity.GuiaActivity"
             android:parentActivityName=".activity.EscolhaActivity">
             <meta-data
@@ -128,6 +98,12 @@
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value=".activity.MenuActivity" />
+        </activity>
+        <activity android:name=".activity.UploadActivity"
+            android:parentActivityName=".activity.CadastroActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".activity.CadastroActivity" />
         </activity>
     </application>
 

@@ -4,85 +4,111 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/txt_background"
     tools:context=".activity.CadastroActivity"
-    tools:layout_editor_absoluteY="81dp">
+    tools:layout_editor_absoluteY="25dp">
 
     <EditText
         android:id="@+id/cadastro_nome"
-        android:layout_width="wrap_content"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="32dp"
         android:ems="10"
         android:hint="@string/hint_nome"
         android:inputType="textPersonName"
-        app:layout_constraintBottom_toTopOf="@+id/cadastro_email"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/toolbar_cadastro" />
 
     <EditText
         android:id="@+id/cadastro_email"
-        android:layout_width="wrap_content"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
         android:ems="10"
         android:hint="@string/hint_login"
         android:inputType="textEmailAddress"
-        app:layout_constraintBottom_toTopOf="@+id/cadastro_email_confirmacao"
-        app:layout_constraintStart_toStartOf="@+id/cadastro_nome"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/cadastro_nome" />
 
     <EditText
         android:id="@+id/cadastro_email_confirmacao"
-        android:layout_width="wrap_content"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
         android:ems="10"
         android:hint="@string/hint_email_confirmacao"
         android:inputType="textEmailAddress"
-        app:layout_constraintBottom_toTopOf="@+id/cadastro_senha"
-        app:layout_constraintStart_toStartOf="@+id/cadastro_email"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/cadastro_email" />
 
     <EditText
         android:id="@+id/cadastro_senha"
-        android:layout_width="wrap_content"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
         android:ems="10"
         android:hint="@string/hint_senha"
         android:inputType="textPassword"
-        app:layout_constraintBottom_toTopOf="@+id/cadastro_senha_confirmacao"
-        app:layout_constraintStart_toStartOf="@+id/cadastro_email_confirmacao"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/cadastro_email_confirmacao" />
 
     <EditText
         android:id="@+id/cadastro_senha_confirmacao"
-        android:layout_width="wrap_content"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
         android:ems="10"
         android:hint="@string/hint_senha_confirmacao"
         android:inputType="textPassword"
-        app:layout_constraintBottom_toTopOf="@+id/botao_cadastrar"
-        app:layout_constraintStart_toStartOf="@+id/cadastro_senha"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/cadastro_senha" />
 
     <Button
         android:id="@+id/botao_cadastrar"
-        android:layout_width="wrap_content"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="100dp"
         android:text="@string/botao_cadastrar"
-        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/cadastro_senha_confirmacao" />
 
     <android.support.v7.widget.Toolbar
         android:id="@+id/toolbar_cadastro"
-        android:layout_width="0dp"
+        android:layout_width="384dp"
         android:layout_height="wrap_content"
         android:background="?attr/colorPrimary"
         android:minHeight="?attr/actionBarSize"
         android:theme="?attr/actionBarTheme"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:title="@string/app_name" />
 
 </android.support.constraint.ConstraintLayout>
