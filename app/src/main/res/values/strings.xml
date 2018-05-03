@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">GuiaTuristicoRs</string>
+    <string name="app_name">Guia Turistico RS</string>
     <string name="hint_login">Digite seu e-mail...</string>
     <string name="hint_senha">Digite sua senha...</string>
     <string name="texto_botao_logar">Logar</string>
@@ -54,4 +54,6 @@
     <string name="btn_novo_usuario">Não tem conta? Cadastre-se...</string>
     <string name="titulo_header">Guia Turistico RS</string>
     <string name="sub_titulo_header">Menu</string>
+    <string name="txt_login">Login</string>
+    <string name="txt_cadastro">Cadastro</string>
 </resources>
